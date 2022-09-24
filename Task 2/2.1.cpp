@@ -30,6 +30,11 @@ int main() {
         exit(-1);
     }
 
+    if (x1 == x2 and y1 == y2) {
+        cout << "ERROR: bishops and piece must be not on the same coordinate" << endl;
+        exit(-1);
+    }
+
     if ((abs(x1 - x2) == abs(y1 - y2))) {
         cout << "Beats" << endl;
     } else {
