@@ -17,7 +17,7 @@ add_executable(${{BUILD_{bias + idx + 1}}} ${{SOURCE_FILES_{bias + idx + 1}}})
     bias += len(cur_files_list)
 
 header = """cmake_minimum_required(VERSION 3.3)
-project(test_build)
+project(Polytech_AIP)
 
 set(CMAKE_CXX_STANDARD 14)
 """
