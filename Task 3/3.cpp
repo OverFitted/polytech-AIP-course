@@ -46,7 +46,7 @@ int main() {
 
         if (x > y) swap(x, y);
         if (y > z) swap(y, z);
-1
+
         if ((abs(pow(x, 2) + pow(y, 2) - pow(z, 2)) <= eps) && (x * y * z != 0)) {
             cout << "Found new pythagorean triple:" << endl;
             cout << x << " " << y << " " << z << endl;
