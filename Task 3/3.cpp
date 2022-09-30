@@ -11,7 +11,7 @@ int main() {
         cin >> cur;
 
         if (!cin.good()) {
-            cout << "ERROR: all inputs must be numbers";
+            cerr << "ERROR: all inputs must be numbers";
             exit(-1);
         }
 
