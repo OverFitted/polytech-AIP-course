@@ -282,3 +282,6 @@ $RECYCLE.BIN/
 # Word temp files
 *.tmp
 ~*
+
+# TEMPORARY (dont have time for it RN)
+README.md

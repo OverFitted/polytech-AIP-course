@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.3)
-project(test_build)
+project(Polytech_AIP)
 
 set(CMAKE_CXX_STANDARD 14)
 
- 
+
 set(BUILD_1 1.0.1.cpp)
 set(SOURCE_FILES_1 "Task 1/1.0.1.cpp")
 add_executable(${BUILD_1} ${SOURCE_FILES_1})
@@ -39,3 +39,7 @@ add_executable(${BUILD_8} ${SOURCE_FILES_8})
 set(BUILD_9 2.2.cpp)
 set(SOURCE_FILES_9 "Task 2/2.2.cpp")
 add_executable(${BUILD_9} ${SOURCE_FILES_9})
+
+set(BUILD_10 3.cpp)
+set(SOURCE_FILES_10 "Task 3/3.cpp")
+add_executable(${BUILD_10} ${SOURCE_FILES_10})

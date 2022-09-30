@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown",
+        "*.omt": "omt",
+        "*.odt": "omt",
+        "iostream": "cpp",
+        "random": "cpp",
+        "limits": "cpp",
+        "cmath": "cpp",
+        "ostream": "cpp"
+    }
+}
