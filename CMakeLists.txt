@@ -43,3 +43,11 @@ add_executable(${BUILD_9} ${SOURCE_FILES_9})
 set(BUILD_10 3.cpp)
 set(SOURCE_FILES_10 "Task 3/3.cpp")
 add_executable(${BUILD_10} ${SOURCE_FILES_10})
+
+set(BUILD_11 4.1.cpp)
+set(SOURCE_FILES_11 "Task 4/4.1.cpp")
+add_executable(${BUILD_11} ${SOURCE_FILES_11})
+
+set(BUILD_12 4.2.cpp)
+set(SOURCE_FILES_12 "Task 4/4.2.cpp")
+add_executable(${BUILD_12} ${SOURCE_FILES_12})
