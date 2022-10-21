@@ -3,7 +3,7 @@ project(Polytech_AIP)
 
 set(CMAKE_CXX_STANDARD 14)
 
-
+ 
 set(BUILD_1 1.0.1.cpp)
 set(SOURCE_FILES_1 "Task 1/1.0.1.cpp")
 add_executable(${BUILD_1} ${SOURCE_FILES_1})
@@ -51,3 +51,15 @@ add_executable(${BUILD_11} ${SOURCE_FILES_11})
 set(BUILD_12 4.2.cpp)
 set(SOURCE_FILES_12 "Task 4/4.2.cpp")
 add_executable(${BUILD_12} ${SOURCE_FILES_12})
+
+set(BUILD_13 5.1.cpp)
+set(SOURCE_FILES_13 "Task 5/5.1.cpp")
+add_executable(${BUILD_13} ${SOURCE_FILES_13})
+
+set(BUILD_14 5.2.1.cpp)
+set(SOURCE_FILES_14 "Task 5/5.2.1.cpp")
+add_executable(${BUILD_14} ${SOURCE_FILES_14})
+
+set(BUILD_15 5.2.2.cpp)
+set(SOURCE_FILES_15 "Task 5/5.2.2.cpp")
+add_executable(${BUILD_15} ${SOURCE_FILES_15})
