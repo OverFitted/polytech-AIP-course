@@ -60,6 +60,10 @@ set(BUILD_14 5.2.1.cpp)
 set(SOURCE_FILES_14 "Task 5/5.2.1.cpp")
 add_executable(${BUILD_14} ${SOURCE_FILES_14})
 
-set(BUILD_15 5.2.2.cpp)
-set(SOURCE_FILES_15 "Task 5/5.2.2.cpp")
+set(BUILD_15 6.1.cpp)
+set(SOURCE_FILES_15 "Task 6/6.1.cpp")
 add_executable(${BUILD_15} ${SOURCE_FILES_15})
+
+set(BUILD_16 6.cpp)
+set(SOURCE_FILES_16 "Task 6/6.cpp")
+add_executable(${BUILD_16} ${SOURCE_FILES_16})
