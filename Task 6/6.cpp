@@ -1,6 +1,6 @@
+#include <ctime>
 #include <fstream>
 #include <iostream>
-#include <ctime>
 using namespace std;
 
 int longest_decr_subseq_length(int arr[], int n, int cur, int prev);
@@ -57,7 +57,7 @@ int main() {
 
     try {
         while (myfile.is_open()) {
-            if (!getline(myfile, line)){
+            if (!getline(myfile, line)) {
                 if (idx == 0)
                     throw runtime_error("File is empty");
                 break;
