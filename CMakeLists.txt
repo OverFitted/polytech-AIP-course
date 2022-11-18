@@ -67,3 +67,15 @@ add_executable(${BUILD_15} ${SOURCE_FILES_15})
 set(BUILD_16 6.cpp)
 set(SOURCE_FILES_16 "Task 6/6.cpp")
 add_executable(${BUILD_16} ${SOURCE_FILES_16})
+
+set(BUILD_17 7.cpp)
+set(SOURCE_FILES_17 "Task 7/7.cpp")
+add_executable(${BUILD_17} ${SOURCE_FILES_17})
+
+set(BUILD_18 8.1.cpp)
+set(SOURCE_FILES_18 "Task 8/8.1.cpp")
+add_executable(${BUILD_18} ${SOURCE_FILES_18})
+
+set(BUILD_19 8.2.cpp)
+set(SOURCE_FILES_19 "Task 8/8.2.cpp")
+add_executable(${BUILD_19} ${SOURCE_FILES_19})
