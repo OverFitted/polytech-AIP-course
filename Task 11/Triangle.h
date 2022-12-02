@@ -3,16 +3,29 @@
 
 #endif //POLYTECH_AIP_TRIANGLE_H
 
+#include "Point.h"
+
 class Triangle {
 public:
-    Triangle(float a, float b, float c);
     Triangle();
+    Triangle(const Point& a, const Point& b, const Point& c);
     Triangle(const Triangle& ref);
+    ~Triangle();
 
+    void setA(const Point& a);
+    void setB(const Point& b);
+    void setC(const Point& c);
+    Point getA() const;
+    Point getB() const;
+    Point getC() const;
+    bool isTriangle() const;
+    bool isEqual(const Triangle& triangle) const;
+    void move(float k);
+    float getPerimeter() const;
 
 private:
-    float a_;
-    float b_;
-    float c_;
+    Point a_;
+    Point b_;
+    Point c_;
 };
 

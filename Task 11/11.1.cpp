@@ -1,6 +1,5 @@
 #include <cmath>
 #include <iostream>
-#include <memory>
 #include <vector>
 
 #include "Point.h"
@@ -17,8 +16,6 @@ int main() {
     while (true) {
         Point cur_point;
         input(cur_point);
-
-        cout << cur_point.getX() << " " << cur_point.getY() << endl;
 
         if (cur_point.getX() == 0. && cur_point.getY() == 0.) {
             break;
@@ -47,8 +44,16 @@ bool isPointInCircle(const Point& point, float radius) {
 void input(Point& point) {
     float x, y;
 
-    cout << "Enter x and y:\n";
-    cin >> x >> y;
+    try {
+        cout << "Enter x and y:\n";
+        cin >> x >> y;
+        if (cin.fail()){
+            throw runtime_error("Cords must numbers");
+        }
+    } catch (exception const& input_err) {
+        cerr << "ERROR: " << input_err.what() << endl;
+        exit(-1);
+    }
 
     point.setX(x);
     point.setY(y);

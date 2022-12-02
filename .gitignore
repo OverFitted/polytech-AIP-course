@@ -280,3 +280,6 @@ $RECYCLE.BIN/
 
 # TEMPORARY (dont have time for it RN)
 README.md
+
+# CMakeBuild
+build/*

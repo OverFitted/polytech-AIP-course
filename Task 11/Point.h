@@ -9,6 +9,7 @@ class Point {
     Point(float x, float y);
     Point();
     Point(const Point& ref);
+    ~Point();
 
     void setXY(float x, float y);
     void setX(float x);
@@ -16,8 +17,9 @@ class Point {
     float getX() const;
     float getY() const;
     void move(float k);
+    float getDistance(const Point& point) const;
 
-   private:
+private:
     float x_;
     float y_;
 };
