@@ -37,6 +37,10 @@ set(BUILD_8 11.2.cpp)
 set(SOURCE_FILES_8 "Task 11/Point.h" "Task 11/Point.cpp" "Task 11/11.2.cpp" "Task 11/Triangle.h" "Task 11/Triangle.cpp")
 add_executable(${BUILD_8} ${SOURCE_FILES_8} "Task 11/Triangle.h" "Task 11/Triangle.cpp")
 
+set(BUILD_8 12.cpp)
+set(SOURCE_FILES_8 "Task 12/base_types.h" "Task 12/base_types.cpp" "Task 12/shape.h" "Task 12/shape.cpp" "Task 12/rectangle.h" "Task 12/rectangle.cpp" "Task 12/compositeshape.h" "Task 12/compositeshape.cpp" "Task 12/circle.h" "Task 12/circle.cpp")
+add_executable(${BUILD_8} ${SOURCE_FILES_8} "Task 12/12.cpp")
+
 set(BUILD_9 Point.cpp)
 set(SOURCE_FILES_9 "Task 11/Point.cpp")
 add_executable(${BUILD_9} ${SOURCE_FILES_9})

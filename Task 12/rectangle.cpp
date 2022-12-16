@@ -1,3 +1,4 @@
+#include <iostream>
 #include "rectangle.h"
 
 Rectangle::Rectangle(float x1, float y1, float x2, float y2) {
@@ -38,6 +39,18 @@ rectangle_t Rectangle::getFrameRect() const {
 };
 
 Rectangle* Rectangle::clone() const {
-    Rectangle new_rect = Rectangle(_x1, _x2, _y1, _y2);
-    return &new_rect;
+    auto* new_rect = new Rectangle(_x1, _y1, _x2, _y2);
+    return new_rect;
+}
+
+std::string Rectangle::getName() const {
+    return name;
+}
+
+std::ostream &operator<<(std::ostream &os, Rectangle &ref) {
+    rectangle_t rect = ref.getFrameRect();
+    point_t rect_pos = rect.getPos();
+    float x1 = rect_pos.getX() - rect.getWidth() / 2, x2 = rect_pos.getX() + rect.getWidth() / 2, y1 = rect_pos.getY() - rect.getHeight() / 2, y2 = rect_pos.getY() + rect.getHeight() / 2;
+    os << ref.getName() << " " << ref.getArea() << " x y, x y are: " << x2 << " " << y2 << " " << x1 << " " << y1 << std::endl;
+    return os;
 }

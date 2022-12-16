@@ -21,16 +21,17 @@ class point_t {
 
 class rectangle_t {
    public:
-    rectangle_t(float width, float height, point_t pos);
+    rectangle_t();
+    rectangle_t(float rect_width, float rect_height, const point_t& rect_pos);
     rectangle_t(const rectangle_t& ref);
     ~rectangle_t();
 
-    void setHeight(float height);
-    void setWidth(float width);
-    void setPos(point_t pos);
+    void setHeight(float rect_height);
+    void setWidth(float rect_width);
+    void setPos(point_t rect_pos);
     float getHeight() const;
     float getWidth() const;
-    float getPos() const;
+    point_t getPos() const;
 
    private:
     float width;

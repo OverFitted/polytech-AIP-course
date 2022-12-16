@@ -1,4 +1,5 @@
 #include "shape.h"
+#include <string>
 
 class Rectangle : public Shape {
    public:
@@ -6,12 +7,15 @@ class Rectangle : public Shape {
     Rectangle(point_t xy1, point_t xy2);
     ~Rectangle();
 
-    void move(float x, float y);
-    void move(point_t new_pos);
-    void scale(float koef);
-    float getArea() const;
-    rectangle_t getFrameRect() const;
-    Rectangle* clone() const;
+    void move(float x, float y) override;
+    void move(point_t new_pos) override;
+    void scale(float koef) override;
+    float getArea() const override;
+    rectangle_t getFrameRect() const override;
+    Rectangle* clone() const override;
+    std::string getName() const override;
+
+    friend std::ostream& operator<<(std::ostream& os, Rectangle& ref);
 
    private:
     float _x1;
