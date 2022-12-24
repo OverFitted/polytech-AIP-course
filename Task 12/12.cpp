@@ -34,7 +34,7 @@ int main() {
     CompositeShape composite;
     std::string type;
 
-    auto** arr = new Shape*[50];
+    auto** arr = new Shape*[200];
 
     while (!file_input.eof()) {
         file_input >> type;
